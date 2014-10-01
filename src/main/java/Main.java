@@ -73,6 +73,7 @@ public class Main extends HttpServlet {
         out.println("<base href=\"" + url + "\" >");
         out.println("<meta http-equiv=\"Content-Type\" content=\"text-html; charset=utf-8\" />");
         String articleHtml = hh.process(url, extractor);
+        System.out.println("test logging");
         // System.out.println(articleHtml);
         out.println(articleHtml);
         out.close();
